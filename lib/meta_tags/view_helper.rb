@@ -222,7 +222,7 @@ module MetaTags
     private
 
       def normalize_title(title)
-        Array(title).map { |t| h(strip_tags(t)) }
+        Array(title).map { |t| h(t) }
       end
 
       def normalize_description(description)
